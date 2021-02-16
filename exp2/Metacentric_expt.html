@@ -1,15 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html> 
 <head>
 <meta charset=utf-8 />
 <title>Calculation of Metacentric height experiment</title>
+
 <style type="text/css">
 body {margin: 30px;}
+img{
+	margin-right: 40%;
+}
+
 </style> 
 </head>
 <body style="background-color:powderblue;">
 <h2 style="text-align:center;">Calculation of Metacentric height experiment</h2>
-<img src="../images/body.png" alt="body" width="300 height="300 style="float:right">
+<input type="button" onclick="imagefun1()" value="Place Body" style="float: right; position: absolute; right: 300px; top: 100px">
+<input type="button" onclick="imagefun2()" value="Simulate" style="position: absolute; right: 300px; top: 150px">
+<img src="../images/vertical_body.jpg" alt="body" width="300 height="300 style="float:right" id="vertical_body" onclick="changeImage()">
 
 <form>
 1.Weight of the body:<br><input type="text" id="weight1" />kg<br><br>
@@ -24,4 +31,24 @@ body {margin: 30px;}
 </p>
 </body>
 <script src="../js/Metacentric_expt.js"></script>
+<script>
+        function imagefun1() {
+            var Image_Id = document.getElementById('vertical_body');
+            if (Image_Id.src.match("../images/vertical_body.jpg")) {
+                Image_Id.src = "../images/place_body.jpg";
+            }
+            else {
+                Image_Id.src = "../images/vertical_body.jpg";
+            }
+        }   
+        function imagefun2() {
+            var Image_Id = document.getElementById('vertical_body');
+            if (Image_Id.src.match("../images/place_body.jpg")) {
+                Image_Id.src = "../images/tilt_body.jpg";
+            }
+            else {
+                Image_Id.src = "../images/place_body.jpg";
+            }
+        }             
+    </script>
 </html>
