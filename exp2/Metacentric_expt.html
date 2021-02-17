@@ -16,7 +16,7 @@ img{
 <h2 style="text-align:center;">Calculation of Metacentric height experiment</h2>
 <input type="button" onclick="imagefun1()" value="Place Body" style="float: right; position: absolute; right: 300px; top: 100px">
 <input type="button" onclick="imagefun2()" value="Simulate" style="position: absolute; right: 300px; top: 150px">
-<img src="meta.png" alt="body" width="300 height="300 style="float:right" id="vertical_body" onclick="changeImage()">
+<img src="../images/vertical_body.JPG" alt="body" width="300 height="300 style="float:right" id="vertical_body" onclick="changeImage()">
 
 <form>
 1.Weight of the body:<br><input type="text" id="weight1" />kg<br><br>
@@ -34,20 +34,20 @@ img{
 <script>
         function imagefun1() {
             var Image_Id = document.getElementById('vertical_body');
-            if (Image_Id.src.match("vertical_body.JPG")) {
-                Image_Id.src = "place_body.JPG";
+            if (Image_Id.src.match("../images/vertical_body.JPG")) {
+                Image_Id.src = "../images/place_body.JPG";
             }
             else {
-                Image_Id.src = "vertical_body.JPG";
+                Image_Id.src = "../images/vertical_body.JPG";
             }
         }   
         function imagefun2() {
             var Image_Id = document.getElementById('vertical_body');
-            if (Image_Id.src.match("place_body.JPG")) {
-                Image_Id.src = "tilt_body.JPG";
+            if (Image_Id.src.match("../images/place_body.JPG")) {
+                Image_Id.src = "../images/tilt_body.JPG";
             }
             else {
-                Image_Id.src = "place_body.JPG";
+                Image_Id.src = "../images/place_body.JPG";
             }
         }             
     </script>
