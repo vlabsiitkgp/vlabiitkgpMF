@@ -4,25 +4,50 @@
 <title>Stabilty of Floating and subemerged bodies</title>
 <style>
 body {
-  background-color: Black;
+  background-color: lightcoral;
   text-align: center;
-  color: white;
+  color: darkgreen;
 }
 </style>
 </head>
 <body>
 
-<h1>Stabilty of Floating and subemerged bodies</h1>
+<h1>Stabilty of Floating and submerged bodies</h1>
 <img src="../images/floating body.png" alt="floating body" style="width:200px">
 <form action="/action_page.php">
-  <label for="body">Select the type of body:</label>
+  <label for="body"><h3>Select the type of body:</h3></label>
   <select name="body" id="body">
-    <option value="volvo">Floating body</option>
-    <option value="saab">Submerged body</option>
+    <option value="float">Floating body</option>
+    <option value="sub">Submerged body</option>
   </select>
   <br><br>
-  <input type="submit" value="Submit">
+  <label for="body"><h3>Select the position of centre of gravity(G), centre of bouyancy(B) and metacentre(M)</h3></label>
+  <select name="centre" id="centre">
+    <option value="BG">B is above G</option>
+    <option value="GB">B is below G</option>
+    <option value="con">B coincides with G</option>
+  </select>
+  <button type="button" onclick="return clickFunction()">submit</button>
 </form>
+<div id="here"> </div>
 
+    <script>
+        function clickFunction(){
+          var body = document.getElementById ("body");
+          var centre = document.getElementById ("centre");
+
+          if ((body.value == "") || (centre.value == "")){
+              alert ("please select an option");
+              return false;
+          }
+
+          if ((body.value == "float") || (centre.value == "BG")){
+                document.getElementById("here").innerHTML='<img src="../images/float_stable.png" width="500" height="500">';
+
+          }
+
+        }
+    </script>
+      </body>
 </body>
 </html>
