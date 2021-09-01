@@ -12,7 +12,7 @@ body {
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-      
+
 
         $(document).ready(function(){
    $("#centre").change(function(){
@@ -37,16 +37,22 @@ body {
 <img src="../images/floating body.png" alt="floating body" style="width:200px" align="right">
 //<form action="/action_page.php" align="left">
   <label for="body"><h3 text align="left">Select the type of body:</h3></label>
-  
+  <select name="centre" id="centre">
+
+    <option value=float_body.PNG>B is above G</option>
+    <option value= sub_body>B is below G</option>
+  </select><br>
+
+
   <br><br>
   <label for="body"><h3 text align="left">Select the position of centre of gravity(G), centre of bouyancy(B) for submerged body</h3></label>
   <select name="centre" id="centre">
-    
+
     <option value="../images/B is above G.PNG" width="300" height="300">B is above G</option>
     <option value="../images/B is below G.PNG" width="300" height="300">B is below G</option>
     <option value="../images/B coincides with G.PNG" width="300" height="300">B coincides with G</option>
   </select><br>
-  
+
 
 
 <img src="" name="image-swap">
@@ -54,12 +60,12 @@ body {
 
  <label for="body"><h3 text align="left">Select the position of centre of gravity and metacentre(M) for floating body</h3></label>
   <select name="centre2" id="centre2">
-    
+
     <option value="../images/M is above G.PNG">M is above G</option>
     <option value="../images/M is below G.PNG">M is below G</option>
     <option value="../images/M coincides with G.PNG">M coincides with G</option>
   </select><br>
-  
+
 
 
 <img src="" name="image-swap2">
