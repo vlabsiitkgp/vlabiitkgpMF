@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,3 +54,75 @@ body {
       </body>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>Stabilty of Floating and subemerged bodies</title>
+<style>
+body {
+  background-color: lightseagreen;
+  text-align: center;
+  color: orange;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+
+        $(document).ready(function(){
+   $("#centre").change(function(){
+     $("img[name=image-swap]").attr("src",$(this).val());
+
+   });
+
+});
+
+         $(document).ready(function(){
+   $("#centre2").change(function(){
+     $("img[name=image-swap2]").attr("src",$(this).val());
+
+   });
+
+});
+    </script>
+</head>
+<body>
+
+<h1>Stabilty of Floating and submerged bodies</h1>
+<img src="../images/floating body.png" alt="floating body" style="width:200px" align="right">
+//<form action="/action_page.php" align="left">
+
+
+  <br><br>
+  <label for="body"><h3 text align="left">Select the position of centre of gravity(G), centre of bouyancy(B) for submerged body</h3></label>
+  <select name="centre" id="centre">
+
+    <option value="../images/B is above G.PNG" width="300" height="300">B is above G</option>
+    <option value="../images/B is below G.PNG" width="300" height="300">B is below G</option>
+    <option value="../images/B coincides with G.PNG" width="300" height="300">B coincides with G</option>
+  </select><br>
+
+
+
+<img src="" name="image-swap">
+
+
+ <label for="body"><h3 text align="left">Select the position of centre of gravity and metacentre(M) for floating body</h3></label>
+  <select name="centre2" id="centre2">
+
+    <option value="../images/M is above G.PNG">M is above G</option>
+    <option value="../images/M is below G.PNG">M is below G</option>
+    
+  </select><br>
+
+
+
+<img src="" name="image-swap2">
+
+
+
+</body>
+</html>
+>>>>>>> b24fe264b78bd55d698d6cd34510448bb6f4fc17
